@@ -1,8 +1,14 @@
 var criticalHit = null;
 var criticalFail = null;
 
-// *NOTE*: that you need the sound-utils script for this to work.
-// This scripts has some black magic to it.  R20 API is notoriously buggy and unstable.  This is what worked at the time.
+// To use: 
+// 1. Add this script and sound-utils.js to your game's API scripts 
+// 2. Upload your critical fail sound to your game's Jukebox, name it "Critical Fail"
+// 3. Upload your critical hit sound to your game's Jukebox, name it "Critical Hit"
+//
+// *notes*: 
+// - You need a pro subscription on R20 for the API to work
+// - This scripts has some black magic to it.  R20 API is notoriously buggy and unstable.  This is what worked at the time.
 
 on("ready",function(){
     var allTracks = findObjs({
